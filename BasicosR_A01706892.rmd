@@ -17,9 +17,12 @@ x
 ```
 2. Calcula estadísticas simples de x. Calcular la media, la desviación estándar y la varianza. Crear un objeto (vector) con el nombre est.x en el que guardar los 3 estadísticos.
 ```{r}
-print(paste("La media es: ", mean(x)))
-print(paste("La desviación estandar es: ", sd(x)))
-print(paste("La varianza es: ", var(x)))
+media.x <- mean(x)
+ds.x <- sd(x)
+varianza.x <- var(x)
+print(paste("La media es: ", media.x))
+print(paste("La desviación estandar es: ", ds.x))
+print(paste("La varianza es: ", varianza.x))
 ```
 3. Escribe un programa R para crear una secuencia de números del 20 al 50 y encuentre la media de los números del 20 al 60 y la suma de los números del 51 al 91. Tip: utiliza las funciones de R.
 ```{r}
