@@ -47,3 +47,4 @@ vignettes/*.pdf
 # IntelliJ Idea
 .idea/
 BT1013.iml
+*.html

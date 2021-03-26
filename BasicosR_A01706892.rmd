@@ -1,0 +1,51 @@
+--------------------
+Title         : BasicosR_A01706892
+Project       : BT1013
+Description   : Comprobar tu dominio de algunos conceptos básicos del lenguaje R.
+Author        : Ian García
+Created on    : 26/03/2021
+Copyright (c) 2021
+--------------------
+
+# Ejercicios R
+
+1. Crear un vector x con los datos 10, 11, 13, −1, 6,3
+
+```{r}
+x <- c(10, 11, 13, -1, 6, 3)
+x
+```
+2. Calcula estadísticas simples de x. Calcular la media, la desviación estándar y la varianza. Crear un objeto (vector) con el nombre est.x en el que guardar los 3 estadísticos.
+```{r}
+print(paste("La media es: ", mean(x)))
+print(paste("La desviación estandar es: ", sd(x)))
+print(paste("La varianza es: ", var(x)))
+```
+3. Escribe un programa R para crear una secuencia de números del 20 al 50 y encuentre la media de los números del 20 al 60 y la suma de los números del 51 al 91. Tip: utiliza las funciones de R.
+```{r}
+sequence <- c(20:50)
+print(paste("La media de 20 a 60 es ", mean(c(20:60))))
+print(paste("La suma de 51 a 91 es ", sum(c(51:91))))
+```
+4. Escribe un programa R para crear un vector que contenga 10 valores enteros aleatorios entre -100 y +50.
+```{r}
+aleatorio <- sample(-100:50, 10, replace = FALSE)
+aleatorio
+```
+5. Escribe un programa R para obtener los primeros 10 números de Fibonacci.
+```{r}
+fibonacci <- function(n) {
+     if (n == 1){
+          return(0)
+     } else if (n == 2){
+          return(1)
+     } else if (n > 2){
+          return(fibonacci(n-1) + fibonacci(n - 2))
+     }
+}
+
+for (i in 1:10) {
+     print(paste("Fibonacci (#", i,"): ", fibonacci(i)))
+}
+```
+
