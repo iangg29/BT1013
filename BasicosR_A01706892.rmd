@@ -2,7 +2,7 @@
 Title         : BasicosR_A01706892
 Project       : BT1013
 Description   : Comprobar tu dominio de algunos conceptos básicos del lenguaje R.
-Author        : Ian García
+Author        : Ian García, Alejandro Rodríguez
 Created on    : 26/03/2021
 Copyright (c) 2021
 --------------------
