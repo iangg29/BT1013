@@ -134,6 +134,8 @@ translateRNA <- function(rna) {
           triplet[3] == "C" ||
           triplet[3] == "A") {
           translated <- append(translated, "Ile")
+        } else {
+          translated <- append(translated, "Met")
         }
       } else if (triplet[2] == "C") {
         if (triplet[3] == "U" ||
