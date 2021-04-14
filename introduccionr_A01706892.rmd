@@ -91,12 +91,16 @@ translateRNA <- function(rna) {
       } else if (triplet[2] == "A") {
         if (triplet[3] == "U" || triplet[3] == "C") {
           translated <- append(translated, "Tyr")
+        } else if (triplet[3] == "G" || triplet[3] == "A"){
+          translated <- append(translated, "STOP")
         }
       } else {
         if (triplet[3] == "U" || triplet[3] == "C") {
           translated <- append(translated, "Cys")
         } else if (triplet[3] == "G") {
           translated <- append(translated, "Trp")
+        } else if (triplets[3] == "A"){
+          translated <- append(translated, "STOP")
         }
       }
     } else if (triplet[1] == "C") {

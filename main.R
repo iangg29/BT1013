@@ -6,3 +6,9 @@
 
 # Copyright (c) 2021
 
+library('seqinr')
+
+coronavirus <- read.fasta('./data/sequence.fasta')
+
+coronavirus[[1]][1:length(coronavirus[[1]])]
+
