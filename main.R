@@ -10,5 +10,4 @@ library('seqinr')
 
 coronavirus <- read.fasta('./data/sequence.fasta')
 
-coronavirus[[1]][1:length(coronavirus[[1]])]
-
+secuencia <- coronavirus[[1]][1:length(coronavirus[[1]])]
